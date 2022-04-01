@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  color: #333333;
+  letter-spacing: 1.5px;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+header,
+main {
+  padding: 30px 0;
+}
+
+.off-white {
+  background: #f5f5f5;
+  border-top: 1px solid #dedede;
+}
+
+/* Header */
+.profile-photo {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.icons {
+  width: 12px;
+  height: auto;
+  padding-right: 5px;
+}
+
+.icon-content {
+  text-decoration: none;
+}
+
+.icon-content:hover {
+  color: green;
+}
+
+.hire-button a {
+  text-decoration: none;
+  background: green;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+/* Main */
+.flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+/* About */
+.about h2,
+.project-content,
+.title {
+  margin-bottom: 10px;
+}
+
+.about p {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+}
+
+/* Project */
+.project-content {
+  background: white;
+  border: 1px solid #dedede;
+  padding: 10px;
+  width: 280px;
+  height: auto;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.github-repo-icon {
+  width: 15px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.project-title a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1778f2;
+}
+
+.project-description {
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.programming-language {
+  display: flex;
+  flex-direction: row;
+}
+
+.programming-language .circle {
+  height: 15px;
+  width: 15px;
+}
+
+.programming-language span {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px;
+}
+
+/* Interests */
+.interest-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.interest-content {
+  background: white;
+  border: 1px solid #dedede;
+  padding: 10px;
+  width: 280px;
+  height: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.interest-icons {
+  width: 40px;
+  height: auto;
+}
+
+/* Media Queries */
+@media screen and (min-width: 320px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 50px auto;
+  }
+
+  .profile {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+
+  .profile-photo {
+    width: 35%;
+  }
+
+  .social-container {
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+  }
+
+  .social-container div {
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    width: 15px;
+    margin-right: 10px;
+  }
+
+  .hire-button {
+    width: 80%;
+    height: auto;
+    margin: 40px auto;
+  }
+
+  .section {
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+
+  .flexbox .grid,
+  .interest-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 30px;
+  }
+
+  .project-content,
+  .interest-content {
+    margin-right: 10px;
+  }
+
+  .title {
+    margin-bottom: 25px;
+  }
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .programming-language span {
+    padding: 0;
+  }
+}
